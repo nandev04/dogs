@@ -13,9 +13,10 @@ export const UserStorage = ({ children }) => {
 
   const userLogout = React.useCallback(
     async function () {
+      // Esse navigate não está funcionando
       setData(null);
-      setLoading(false);
       setError(null);
+      setLoading(false);
       setLogin(false);
       window.localStorage.removeItem('token');
       navigate('/login');
