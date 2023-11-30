@@ -48,7 +48,6 @@ const LoginForm = () => {
           </Link>
         </p>
       </div>
-      <Link to={'/login/criar'}>Cadastro</Link>
     </section>
   );
 };

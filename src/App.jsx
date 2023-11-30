@@ -6,7 +6,7 @@ import Home from './Components/Home';
 import Footer from './Components/Footer';
 import Login from './Components/Login/Login';
 import { UserStorage } from './UserContext';
-import Conta from './Components/Conta';
+import Conta from './Components/User/User';
 
 const App = () => {
   return (
@@ -17,7 +17,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login/*" element={<Login />} />
-            <Route path="/conta/" element={<Conta />} />
+            <Route path="/conta/*" element={<Conta />} />
           </Routes>
           <Footer />
         </UserStorage>
