@@ -6,7 +6,7 @@ import Home from './Components/Home';
 import Footer from './Components/Footer';
 import Login from './Components/Login/Login';
 import { UserStorage } from './UserContext';
-import Conta from './Components/Conta';
+import Conta from './Components/User/User';
 import ProtectedRoute from './Components/Helper/ProtectedRoute';
 
 const App = () => {
