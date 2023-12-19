@@ -16,10 +16,13 @@ const App = () => {
         <UserStorage>
           <Header />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/login/*" element={<Login />} />
+            <Route path="https://nandev04.github.io/dogs/" element={<Home />} />
             <Route
-              path="conta/*"
+              path="https://nandev04.github.io/dogs/login/*"
+              element={<Login />}
+            />
+            <Route
+              path="https://nandev04.github.io/dogs/conta/*"
               element={
                 <ProtectedRoute>
                   <Conta />
