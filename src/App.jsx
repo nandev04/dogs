@@ -12,7 +12,7 @@ import ProtectedRoute from './Components/Helper/ProtectedRoute';
 const App = () => {
   return (
     <div>
-      <HashRouter>
+      <BrowserRouter>
         <UserStorage>
           <Header />
           <Routes>
@@ -29,7 +29,7 @@ const App = () => {
           </Routes>
           <Footer />
         </UserStorage>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 };

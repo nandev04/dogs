@@ -1,7 +1,7 @@
 {
-  "homepage": "https://nandev04.github.io/dogs",
+  "homepage": "https://nandev04.github.io/dogs/",
   "name": "projeto-dogs",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
