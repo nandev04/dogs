@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, HashRouter } from 'react-router-dom';
 import Header from './Components/Header';
 import Home from './Components/Home';
 import Footer from './Components/Footer';
@@ -12,17 +12,14 @@ import ProtectedRoute from './Components/Helper/ProtectedRoute';
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <UserStorage>
           <Header />
           <Routes>
-            <Route path="https://nandev04.github.io/dogs/" element={<Home />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/login/*" element={<Login />} />
             <Route
-              path="https://nandev04.github.io/dogs/login/*"
-              element={<Login />}
-            />
-            <Route
-              path="https://nandev04.github.io/dogs/conta/*"
+              path="conta/*"
               element={
                 <ProtectedRoute>
                   <Conta />
@@ -32,7 +29,7 @@ const App = () => {
           </Routes>
           <Footer />
         </UserStorage>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };
